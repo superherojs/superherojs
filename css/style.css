@@ -8,7 +8,7 @@ html, body {
 html {
     overflow:auto;
     overflow-y: scroll;
-    overflow-x: hidden;
+    min-width:70em;
 }
 
 body {
@@ -19,17 +19,16 @@ body {
     font-size:10px;
 }
 
-/* --------------------------------------- */
-
 h1 {
-    font-size:12em;
+    font-size:10em;
     margin:0 0 .5em 0;
     line-height: 1;
+    max-width: 2em;
 }
 
 h2 {
     font-size:3em;
-    margin:0 0 1em 0;
+    margin:0 0 .5em 0;
     line-height: 1.8;
 }
 
@@ -37,21 +36,31 @@ h1, h2 {
     font-family: 'Bangers', sans-serif;
 }
 
-h1 i, h2 i { float:left; margin:-1px .5em 0 -1.8em; }
-
-/* --------------------------------------- */
+h1 i, h2 i {
+    float:left;
+    margin:-2px .5em 0 -1.8em;
+}
 
 p {
     margin:0 0 1.5em 0;
     line-height: 1.8;
-    max-width:38em;
+    max-width:20em;
     font-size:2em;
+}
+
+p.first {
+    padding-top:1.5em;
+    margin:0;
 }
 
 ol {
     list-style-type:decimal;
-    margin:0 0 1.5em 0;
+    margin:0 0 0 1.2em;
     font-size:2em;
+}
+
+ol.last {
+    margin-bottom:5em;
 }
 
 ol p {
@@ -60,7 +69,7 @@ ol p {
 
 li {
     padding:.3em 0;
-    line-height: 1.8;
+    line-height: 1.5;
 }
 
 a {
@@ -70,7 +79,6 @@ a {
 
 a:hover {
     color:#000;
-    text-decoration: underline;
 }
 
 /*
@@ -80,52 +88,127 @@ a:visited {
 */
 
 a span {
-    display: block;
+    color:rgba(0,0,0,0.3);
+    padding:0 0 0 .5em;
+}
+
+a:hover span {
+    color:#000;
+}
+
+input[type=email] {
     border:none;
-    font-size:.8em;
-    color:rgba(0,0,0,0.5);
-    line-height: 1;
+    font-size:.6em;
+    padding:1em;
+    width:30em;
+    margin:0 0 1em 0;
+    background: rgba(255,255,255,0.9);
+}
+
+input[type=email]:focus {
+    background: #fff;
+    outline: none;
+}
+
+input[type=submit] {
+    border:none;
+    background: rgba(0,0,0,0.5);
+    color:#fff;
+    padding:1em 2em;
+    font-size:.6em;
+    cursor: pointer;
+    margin:0;
+}
+
+input[type=submit]:hover {
+    background: rgba(0,0,0,0.7);
+}
+
+form p {
+    margin:0;
 }
 
 /* --------------------------------------- */
 
 section {
-    position: relative;
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
     box-sizing:border-box;
-    padding:5% 10% 4% 10%;
-
+    position: relative;
     background-position: top right;
     background-repeat: no-repeat;
     background-size: auto 100%;
     float: left;
     width:100%;
+    padding:10em 10em 10em 15em;
 }
 
-section.close { padding-top:0; }
-section.first { padding-top:5%; }
-
-section.one { background-position: top left; background-image:url("../images/gun@2x.png"); background-color: #be2826; color:#fff; height:100%; }
-section.one a { color:#fff; text-decoration: underline; }
-
-section.two { background-image:url("../images/blue@2x.png"); background-color: #BBE5F9; color:#000; }
-section.two a, section.two h2 { color:#297fa8; }
-
-section.more { background-position: bottom left; background-image: url("../images/what@2x.png"); background-color: #3387c4; color:#fff; background-size: auto 80%; }
-section.more a { color:#fff; }
-
-section .poster {
-    position: absolute;
-    bottom:10%;
-    right:10%;
-    width:40%;
+section.alternate {
+    padding-left:50em;
 }
 
-section .content {
-    float: right;
-    width:50%;
+section.invert {
+    color:#fff;
 }
 
-@media all and (max-width: 800px) {
+section.invert a {
+    color:#fff;
+    text-decoration: underline;
 }
+
+section.init {
+    height: 100%;
+    padding-top:20em;
+}
+
+section.one {
+    background-image:url("../images/gun@2x.png");
+    background-color: #be2826;
+    color:#fff;
+}
+
+section.two {
+    background-position: top left;
+    background-image:url("../images/blue@2x.png");
+    background-color: #BBE5F9;
+    color:#000;
+}
+
+section.two a {
+    color:#297fa8;
+}
+
+section.two a:hover {
+    color:#000;
+}
+
+section.more {
+    background-image: url("../images/what@2x.png");
+    background-color: #3387c4;
+    color:#fff;
+}
+
+section.more a {
+    color:#fff;
+}
+
+section.links {
+}
+
+section.close {
+    padding-top:0;
+}
+
+
+@media all and (max-width: 80em) {
+    body { font-size:8px; }
+    section.init { padding-top:40em; }
+}
+
+
+
+
+
+
+
+
