@@ -52,6 +52,7 @@ h2 {
     font-size:3em;
     margin:0 0 .5em 0;
     line-height: 1.8;
+    letter-spacing:.05em;
 }
 
 h1, h2 {
