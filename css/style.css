@@ -1,3 +1,26 @@
+@font-face {
+  font-family: 'Bangers';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bangers'), local('Bangers-Regular'), url(../fonts/bangers.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(../fonts/source.sans.pro.light.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(../fonts/source.sans.pro.bold.woff) format('woff');
+}
+
+/* --------------------------------------- */
+
 html, body {
     margin: 0;
     padding: 0;
@@ -76,7 +99,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a:hover, a:visited:hover {
     color:#000;
 }
 
