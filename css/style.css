@@ -216,6 +216,14 @@ section.close {
     padding-top:0;
 }
 
+section.top {
+    padding-top:15em;
+}
+
+section.last {
+    padding-bottom:15em;
+}
+
 section.links {
     max-width: 130em;
     margin:0 auto;
@@ -262,12 +270,11 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 @media all and (max-width: 50em) {
-    section, section.alternate { padding:10em; }
+    section, section.alternate, section.top, section.last { padding:10em; }
     i { display: none !important; }
-    ol { margin:0; }
 }
 
 @media all and (max-width: 40em) {
-    section, section.alternate { padding:6em; }
+    section, section.alternate, section.top, section.last { padding:6em; }
     section.one { background-image:none; }
 }
