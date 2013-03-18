@@ -9,7 +9,8 @@
     <meta http-equiv="content-language" content="en">
 
     <link href='icons/stylesheets/general_foundicons.css' rel='stylesheet' type='text/css'>
-    <link href='icons/stylesheets/social_foundicons.css' rel='stylesheet' type='text/css'>
+    <!-- <link href='icons/stylesheets/social_foundicons.css' rel='stylesheet' type='text/css'> -->
+
     <link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700' rel='stylesheet' type='text/css'>
 
@@ -30,47 +31,48 @@
     </script>
 </head>
 <body>
-<div id="container">
 
+<section class="init one invert">
+    <div class="poster">
+        <h1><span>Superhero JavaScript</span></h1>
+        <p>
+            Creating, testing and maintaining a large JavaScript code base is not easy &mdash;
+            especially since great articles on how to do this are hard to find.
+            This page is a collection of the best articles we've found on the topic.
+            We recommend reading the articles in order. Have fun!
+        </p>
+        <p>
+            Follow us on <i class="foundicon-twitter"></i>
+            <a href="http://twitter.com/superhero_js">Twitter</a> or
+            <i class="foundicon-github"></i>
+            <a href="https://github.com/superherojs/superherojs.github.com">GitHub</a>,
+            or <a href="#newsletter">our newsletter</a> for updates.
+        </p>
+    </div>
+</section>
 
-<section class="init">
-    <div class="img img-first img-pow"></div>
-    <h1><span>Superhero JavaScript</span></h1>
-    <p>
-        Creating, testing and maintaining a large JavaScript code base is not easy &mdash;
-        especially since great articles on how to do this are hard to find.
-        This page is a collection of the best articles we've found on the topic.
-        We recommend reading the articles in order. Have fun!
-        <a href="#"></a>
-    </p>
-    <p>
-        Follow us on <i class="foundicon-twitter"></i>
-        <a href="http://twitter.com/superhero_js">Twitter</a> or
-        <i class="foundicon-github"></i>
-        <a href="https://github.com/superherojs/superherojs.github.com">GitHub</a>
-        for updates. Or you can subscribe to <a href="#newsletter">our newsletter</a>.
-    </p>
+<section class="toc two">
+    <h2><span><i class="foundicon-globe"></i> Hello, fellow human!</span></h2>
+    <ol>
+        <li><a href="#language">Understanding JavaScript: Syntax, style and gotchas</a></li>
+        <li><a href="#organizing">Organizing your code: API design, deferreds, files and folders</a></li>
+        <li><a href="#testing">Testing your application: Testable code, readable tests</a></li>
+        <li><a href="#tools">Tools of the trade: Workflow, developer tools, debugging tips</a></li>
+        <li><a href="#performance">Performance: Memory use, performance profiling, browser redraws</a></li>
+        <li><a href="#keepaneyeon">Upcoming: New things coming to JavaScript</a></li>
+        <li><a href="#resources">Next steps: Books and other resources</a></li>
+    </ol>
     <p class="meta">
         Organized by
         <a href="http://kimjoar.net">@kimjoar</a>,
         <a href="https://twitter.com/madsmobaek">@madsmobaek</a> and
         <a href="http://bjorkoy.com/">@olav</a>.
     </p>
-    <ol>
-        <li><a href="#language">Understanding JavaScript</a></li>
-        <li><a href="#organizing">Organizing your code</a></li>
-        <li><a href="#testing">Testing your application</a></li>
-        <li><a href="#tools">Tools of the trade</a></li>
-        <li><a href="#performance">Performance</a></li>
-        <li><a href="#browser">The browser et. al</a></li>
-        <li><a href="#keepaneyeon">Keep an eye on</a></li>
-        <li><a href="#resources">Books and other resources</a></li>
-    </ol>
 </section>
 
 
-<section>
-    <h2 id="language"><span><i class="foundicon-idea"></i> Understanding JavaScript</span></h2>
+<section class="syntax close first" id="language">
+    <h2><span><i class="foundicon-idea"></i> Understanding JavaScript</span></h2>
     <p>So, you have read <a href="http://shop.oreilly.com/product/9780596517748.do">The Good Parts</a> &mdash; what should you read next? We believe that it is essential to get a basic understanding of how prototypical inheritance works and to understand, and know how to use, some of the most used patterns.</p>
     <ol>
         <li><a href="https://github.com/rwldrn/idiomatic.js/">
@@ -87,8 +89,8 @@
 </section>
 
 
-<section>
-    <h2 id="organizing"><i class="foundicon-folder"></i> <span>Organizing your code</span></h2>
+<section id="organizing" class="close">
+    <h2><i class="foundicon-folder"></i> <span>Organizing your code</span></h2>
     <p>Structure, APIs, promises and frameworks/libraries</p>
     <ol>
         <li><a href="http://coding.smashingmagazine.com/2012/10/09/designing-javascript-apis-usability/">
@@ -107,8 +109,8 @@
 </section>
 
 
-<section>
-    <h2 id="testing"><i class="foundicon-checkmark"></i> <span>Testing your application</span></h2>
+<section id="testing" class="close">
+    <h2><i class="foundicon-checkmark"></i> <span>Testing your application</span></h2>
     <p>Writing tests</p>
     <ol>
         <li><a href="https://shanetomlinson.com/2013/testing-javascript-frontend-part-1-anti-patterns-and-fixes/">
@@ -125,8 +127,8 @@
 </section>
 
 
-<section>
-    <h2 id="tools"><i class="foundicon-tools"></i> <span>Tools of the trade</span></h2>
+<section id="tools" class="close">
+    <h2><i class="foundicon-tools"></i> <span>Tools of the trade</span></h2>
     <p>Tools</p>
     <ol>
         <li><a href="http://www.youtube.com/watch?v=f7AU2Ozu8eo">
@@ -142,8 +144,8 @@
     </ol>
 </section>
 
-<section>
-    <h2 id="performance"><i class="foundicon-graph"></i> <span>Performance</span></h2>
+<section id="performance" class="close">
+    <h2><i class="foundicon-graph"></i> <span>Performance and Browsers</span></h2>
     <p>Create lightning fast applications by learning what causes performance problems and how to fix them</p>
     <ol>
         <li><a href="http://coding.smashingmagazine.com/2012/11/05/writing-fast-memory-efficient-javascript/">
@@ -160,7 +162,7 @@
 </section>
 
 
-<section>
+<section id="browser">
     <h2 id="browser"><i class="foundicon-globe"></i> <span>The browser</span></h2>
     <p>Understanding the browser ...</p>
     <ol>
@@ -168,12 +170,17 @@
             How browsers work <span>Tali Garsiel & Paul Irish, html5rocks.com</span></a></li>
         <li><a href="http://paulirish.com/2013/webkit-for-developers/">
             WebKit for Developers <span>Paul Irish, paulirish.com</span></a></li>
+        <li><a href="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/">How browsers work
+            <span>Tali Garsiel & Paul Irish, html5rocks.com</span></a>
+        </li>
+        <li><a href="http://paulirish.com/2013/webkit-for-developers/">WebKit for Developers <span>Paul Irish, paulirish.com</span></a>
+        </li>
     </ol>
 </section>
 
 
-<section>
-    <h2 id="keepaneyeon"><i class="foundicon-right-arrow"></i> <span>Keep an eye on</span></h2>
+<section id="keepaneyeon" class="close">
+    <h2><i class="foundicon-right-arrow"></i> <span>Upcoming</span></h2>
     <p>New shit</p>
     <ol>
         <li><a href="http://www.youtube.com/watch?v=X_ek1wSe66o">
@@ -192,19 +199,23 @@
 </section>
 
 
-<section>
-    <h2 id="resources"><i class="foundicon-plus"></i> <span>Books and other resources</span></h2>
-    <p>Books and newsletters</p>
-    <ol>
-        <li><a href="http://shop.oreilly.com/product/9780596806767.do">
-            JavaScript Patterns <span>Stoyan Stefanov, shop.oreilly.com</span></a></li>
-        <li><a href="http://shop.oreilly.com/product/0636920018421.do">
-            JavaScript Web Applications <span>Alex MacCaw, shop.oreilly.com</span></a></li>
-        <li><a href="http://javascriptweekly.com/">
-            JavaScript Weekly <span>Peter Cooper, javascriptweekly.com</span></a></li>
-        <li><a href="http://daily.w3viewer.com/">
-            Open Web Platform Daily Digest <span>Šime Vidas, daily.w3viewer.com</span></a></li>
-    </ol>
+<section id="resources" class="more">
+    <div class="content">
+        <h2><i class="foundicon-mail"></i> <span>Books and other resources</span></h2>
+        <p>What about HTML forms with file uploads? As you know from writing HTML file upload form, these use a
+            multipart/form-data Content-Type, with the enctype attribute in HTML. In cURL we can pair the -F option and
+            the @readFile macro covered above.</p>
+        <ol>
+            <li><a href="http://shop.oreilly.com/product/9780596806767.do">
+              JavaScript Patterns <span>Stoyan Stefanov, shop.oreilly.com</span></a></li>
+            <li><a href="http://shop.oreilly.com/product/0636920018421.do">
+                JavaScript Web Applications <span>Alex MacCaw, shop.oreilly.com</span></a></li>
+            <li><a href="http://javascriptweekly.com/">
+                JavaScript Weekly <span>Peter Cooper, javascriptweekly.com</span></a></li>
+            <li><a href="http://daily.w3viewer.com/">
+                Open Web Platform Daily Digest <span>Sime Vidas, daily.w3viewer.com</span></a></li>
+        </ol>
+    </div>
 </section>
 
 
@@ -218,6 +229,5 @@
 </section>
 
 
-</div>
 </body>
 </html>

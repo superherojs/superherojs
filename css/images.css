@@ -1,6 +1,7 @@
-.img { display: block; }
+.img { display: block;width:500px; height:500px; background-size: 100% 100%; }
 
-.img-pow { width:500px; height:500px; background:url("../images/pow.png"); background-size: 100% 100%; }
+.img-pow { background-image:url("../images/pow.png"); }
+.img-boom { background-image:url("../images/boom.png"); }
 
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -11,5 +12,6 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 
     .img-pow { background-image:url("../images/pow@2x.png"); }
+    .img-boom { background-image:url("../images/boom@2x.png"); }
 
 }

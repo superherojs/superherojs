@@ -1,28 +1,40 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    overflow:auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
 body {
     background:#fff;
     color:rgba(0,0,0,1);
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
-    font-size:18px;
+    font-size:10px;
 }
 
 /* --------------------------------------- */
 
 h1 {
-    font-size:4em;
+    font-size:12em;
     margin:0 0 .5em 0;
-    line-height: 1.5;
+    line-height: 1;
 }
 
 h2 {
-    font-size:1.4em;
-    margin:0 0 1.5em 0;
+    font-size:3em;
+    margin:0 0 1em 0;
     line-height: 1.8;
 }
 
 h1, h2 {
     font-family: 'Bangers', sans-serif;
-    color:#000;
 }
 
 h1 i, h2 i { float:left; margin:-1px .5em 0 -1.8em; }
@@ -33,12 +45,13 @@ p {
     margin:0 0 1.5em 0;
     line-height: 1.8;
     max-width:38em;
+    font-size:2em;
 }
 
 ol {
-    color:#ccc;
     list-style-type:decimal;
     margin:0 0 1.5em 0;
+    font-size:2em;
 }
 
 ol p {
@@ -57,6 +70,7 @@ a {
 
 a:hover {
     color:#000;
+    text-decoration: underline;
 }
 
 /*
@@ -69,18 +83,49 @@ a span {
     display: block;
     border:none;
     font-size:.8em;
-    color:#b8c4c9;
+    color:rgba(0,0,0,0.5);
     line-height: 1;
 }
 
 /* --------------------------------------- */
 
-section { padding:7%; }
-section .img { position: absolute; top:50%; right:7%; margin-top:-250px; }
+section {
+    position: relative;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    padding:5% 10% 4% 10%;
 
-section.init { background: #fff; }
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    float: left;
+    width:100%;
+}
+
+section.close { padding-top:0; }
+section.first { padding-top:5%; }
+
+section.one { background-position: top left; background-image:url("../images/gun@2x.png"); background-color: #be2826; color:#fff; height:100%; }
+section.one a { color:#fff; text-decoration: underline; }
+
+section.two { background-image:url("../images/blue@2x.png"); background-color: #BBE5F9; color:#000; }
+section.two a, section.two h2 { color:#297fa8; }
+
+section.more { background-position: bottom left; background-image: url("../images/what@2x.png"); background-color: #3387c4; color:#fff; background-size: auto 80%; }
+section.more a { color:#fff; }
+
+section .poster {
+    position: absolute;
+    bottom:10%;
+    right:10%;
+    width:40%;
+}
+
+section .content {
+    float: right;
+    width:50%;
+}
 
 @media all and (max-width: 800px) {
-    h1 i, h2 i { display:none !important; }
-    #container { padding:2%; font-size:16px; }
 }
