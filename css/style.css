@@ -77,7 +77,7 @@ p.first {
 
 ol {
     list-style-type:decimal;
-    margin:0 0 0 1.2em;
+    margin:0;
     font-size:2em;
 }
 
@@ -163,7 +163,7 @@ section {
 }
 
 section.alternate {
-    padding:15em 15em 15em 65em;
+    padding:15em 15em 15em 70em;
 }
 
 section.alternate p {
@@ -270,22 +270,23 @@ only screen and (                min-resolution: 2dppx) {
 
 @media all and (max-width: 65em) {
     body { font-size:7px; }
+    section.two { background-image:none; }
+    section.alternate { padding:10em 15em; }
+    section.alternate p { max-width: 40em; }
 }
 
 @media all and (max-width: 55em) {
     li a span { display: none; }
-    section.two { background-image:none; }
     section.more { background-image:none; }
-    section.alternate { padding:10em 15em; }
 }
 
 @media all and (max-width: 50em) {
     section, section.alternate, section.top, section.last { padding:10em; }
+    section.close { padding-top:0; }
     i { display: none !important; }
 }
 
 @media all and (max-width: 40em) {
-    section, section.alternate, section.top, section.last { padding:6em; }
     section.one { background-image:none; }
     h1 { font-size:7em; }
     input[type=email] { width:20em; }
