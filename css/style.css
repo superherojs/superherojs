@@ -171,14 +171,14 @@ section .inner {
 }
 
 section.one {
-    background-image:url("../images/gun@2x.png");
+    background-image:url("../images/gun.png");
     background-color: #be2826;
     color:#fff;
 }
 
 section.two {
     background-position: top left;
-    background-image:url("../images/blue@2x.png");
+    background-image:url("../images/blue.png");
     background-color: #BBE5F9;
     color:#000;
 }
@@ -192,7 +192,7 @@ section.two a:hover {
 }
 
 section.more {
-    background-image: url("../images/what@2x.png");
+    background-image: url("../images/what.png");
     background-color: #3387c4;
     color:#fff;
 }
@@ -216,6 +216,22 @@ section.links {
     float:none;
 }
 
+/* --------------------------------------- */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+    section.one { background-image:url("../images/gun@2x.png"); }
+    section.two { background-image:url("../images/blue@2x.png"); }
+    section.more { background-image: url("../images/what@2x.png"); }
+
+}
+
+/* --------------------------------------- */
 
 @media all and (max-width: 85em) {
     body { font-size:9px; }
