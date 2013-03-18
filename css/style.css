@@ -137,7 +137,6 @@ form p {
 }
 
 section {
-    background: #fff;
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
     box-sizing:border-box;
@@ -145,8 +144,6 @@ section {
     background-position: top right;
     background-repeat: no-repeat;
     background-size: auto 100%;
-    float: left;
-    width:100%;
     padding:10em 10em 10em 15em;
 }
 
@@ -227,8 +224,6 @@ section.last {
 section.links {
     max-width: 130em;
     margin:0 auto;
-    clear:both;
-    float:none;
 }
 
 /* --------------------------------------- */
@@ -277,4 +272,6 @@ only screen and (                min-resolution: 2dppx) {
 @media all and (max-width: 40em) {
     section, section.alternate, section.top, section.last { padding:6em; }
     section.one { background-image:none; }
+    h1 { font-size:7em; }
+    input[type=email] { width:20em; }
 }
