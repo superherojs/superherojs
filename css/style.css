@@ -310,4 +310,5 @@ only screen and (                min-resolution: 2dppx) {
     section.one { background-image:none; }
     h1 { font-size:7em; }
     input[type=email] { width:20em; }
+    br { display: none; }
 }
