@@ -14,6 +14,7 @@
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700' rel='stylesheet' type='text/css'>
 
     <link href='css/reset.css' rel='stylesheet' type='text/css'>
+    <link href='css/animate.css' rel='stylesheet' type='text/css'>
     <link href='css/images.css' rel='stylesheet' type='text/css'>
     <link href='css/style.css' rel='stylesheet' type='text/css'>
 
@@ -29,19 +30,32 @@
       })();
     </script>
 </head>
-<body>
+<body id="superhero">
 
-<section class="init one invert">
-    <h1><span>Superhero JavaScript</span></h1>
-    <p>
-        Creating, testing and maintaining a large JavaScript code base is not easy &mdash;
-        especially since great articles on how to do this are hard to find.
-        This page is a collection of the best articles we've found on the topic.
-        We recommend reading the articles in order. Have fun!
-    </p>
-</section>
+<section class="init one invert"><div class="inner">
+    <div class="animated fadeInDown">
+        <h1><span>Superhero JavaScript</span></h1>
+    </div>
+    <div class="animated fadeInUp">
+        <p>
+            Maintaining a large JavaScript code base is not easy &mdash;
+            especially since great articles on how to do this are hard to find.
+            This page is a collection of the best articles we've found on the topic.
+        </p>
+        <p>
+            Follow us on <a href="http://twitter.com/superhero_js">Twitter</a> or
+            <a href="https://github.com/superherojs/superherojs.github.com">GitHub</a>,
+            or <a href="#newsletter">our newsletter</a>.
+        </p>
+    </div>
+</div></section>
 
 <section class="links alternate toc two">
+    <p>
+        So, you've read <a href="http://shop.oreilly.com/product/9780596517748.do">The Good Parts</a> &mdash; what should you read next?
+        These articles will help you understand the syntax of JavaScript, how to organize your projects, how to test and tweak your code,
+        and what's on the horizon. Have fun!
+    </p>
     <ol>
         <li><a href="#language">Understanding JavaScript: Syntax, style and gotchas</a></li>
         <li><a href="#organizing">Organizing your code: API design, deferreds, files and folders</a></li>
@@ -51,11 +65,6 @@
         <li><a href="#keepaneyeon">Upcoming: New things coming to JavaScript</a></li>
         <li><a href="#resources">Next steps: Books and other resources</a></li>
     </ol>
-    <p class="first">
-        Follow us on <a href="http://twitter.com/superhero_js">Twitter</a> or
-        <a href="https://github.com/superherojs/superherojs.github.com">GitHub</a>,
-        or <a href="#newsletter">our newsletter</a>.
-    </p>
     <!--
     <p class="meta">
         Organized by
@@ -69,7 +78,7 @@
 
 <section class="links" id="language">
     <h2><span><i class="foundicon-idea"></i> Understanding JavaScript</span></h2>
-    <!-- <p>So, you have read <a href="http://shop.oreilly.com/product/9780596517748.do">The Good Parts</a> &mdash; what should you read next? We believe that it is essential to get a basic understanding of how prototypical inheritance works and to understand, and know how to use, some of the most used patterns.</p> -->
+
     <ol>
         <li><a href="https://github.com/rwldrn/idiomatic.js/">
             Principles of Writing Consistent, Idiomatic JavaScript <span>Rick Waldron, github.com/rwldrn</span></a></li>
@@ -142,10 +151,15 @@
     </ol>
 </section>
 
+
 <section id="performance" class="links close">
-    <h2><i class="foundicon-graph"></i> <span>Performance and Browsers</span></h2>
+    <h2><i class="foundicon-globe"></i> <span>Performance and Browsers</span></h2>
     <!-- <p>Create lightning fast applications by learning what causes performance problems and how to fix them</p> -->
     <ol>
+        <li><a href="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/">
+            How browsers work <span>Tali Garsiel & Paul Irish, html5rocks.com</span></a></li>
+        <li><a href="http://paulirish.com/2013/webkit-for-developers/">
+            WebKit for Developers <span>Paul Irish, paulirish.com</span></a></li>
         <li><a href="http://coding.smashingmagazine.com/2012/11/05/writing-fast-memory-efficient-javascript/">
             Writing Fast, Memory-Efficient JavaScript <span>Addy Osmani, smashingmagazine.com</span></a></li>
         <li><a href="http://addyosmani.com/blog/performance-optimisation-with-timeline-profiles/">
@@ -156,18 +170,6 @@
             with requestAnimationFrame <span>Paul Lewis, html5rocks.com</span></a></li>
         <li><a href="http://gent.ilcore.com/2011/03/how-not-to-trigger-layout-in-webkit.html">
             How (not) to trigger a layout in WebKit<span>Tony Gentilcore, gent.ilcore.com</span></a></li>
-    </ol>
-</section>
-
-
-<section id="browser" class="links close">
-    <h2><i class="foundicon-globe"></i> <span>The browser</span></h2>
-    <!-- <p>Understanding the browser ...</p> -->
-    <ol>
-        <li><a href="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/">
-            How browsers work <span>Tali Garsiel & Paul Irish, html5rocks.com</span></a></li>
-        <li><a href="http://paulirish.com/2013/webkit-for-developers/">
-            WebKit for Developers <span>Paul Irish, paulirish.com</span></a></li>
     </ol>
 </section>
 
