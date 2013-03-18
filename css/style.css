@@ -90,7 +90,6 @@ ol p {
 }
 
 li {
-    padding:.3em 0;
     line-height: 1.5;
 }
 
@@ -105,6 +104,11 @@ a:hover, a:visited:hover {
 
 a:visited {
     color:#657B83;
+}
+
+li a {
+    padding:.3em 0;
+    display: block;
 }
 
 a span {
@@ -167,7 +171,7 @@ section.alternate {
 }
 
 section.alternate p {
-    max-width: 50em;
+    max-width: 40em;
 }
 
 section.invert {
@@ -187,6 +191,11 @@ section .inner {
     position: absolute;
     left:15em;
     bottom:10em;
+}
+
+section .content {
+    max-width: 105em;
+    margin:0 auto;
 }
 
 section.one {
@@ -241,6 +250,18 @@ section.links {
     margin:0 auto;
 }
 
+section.links ol {
+    border-top:.09em dotted #f0f0f0;
+}
+
+section.links a {
+    border-bottom:.09em dotted #f0f0f0;
+}
+
+section.links a:hover {
+    border-color:#ddd;
+}
+
 /* --------------------------------------- */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -272,7 +293,6 @@ only screen and (                min-resolution: 2dppx) {
     body { font-size:7px; }
     section.two { background-image:none; }
     section.alternate { padding:10em 15em; }
-    section.alternate p { max-width: 40em; }
 }
 
 @media all and (max-width: 55em) {
