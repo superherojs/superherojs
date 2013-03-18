@@ -144,7 +144,7 @@ section {
 }
 
 section.alternate {
-    padding:15em 15em 15em 63em;
+    padding:15em 15em 15em 65em;
 }
 
 section.alternate p {
@@ -209,6 +209,13 @@ section.close {
     padding-top:0;
 }
 
+section.links {
+    max-width: 130em;
+    margin:0 auto;
+    clear:both;
+    float:none;
+}
+
 
 @media all and (max-width: 85em) {
     body { font-size:9px; }
@@ -232,11 +239,12 @@ section.close {
 }
 
 @media all and (max-width: 50em) {
-    section, section.alternate { padding:8em; }
+    section, section.alternate { padding:10em; }
     i { display: none !important; }
     ol { margin:0; }
 }
 
 @media all and (max-width: 40em) {
+    section, section.alternate { padding:6em; }
     section.one { background-image:none; }
 }
