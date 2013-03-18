@@ -130,12 +130,6 @@ form p {
 
 /* --------------------------------------- */
 
-.container {
-    height:100%;
-    max-width: 150em;
-    margin:0 auto;
-}
-
 section {
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
@@ -152,7 +146,7 @@ section.alternate {
 }
 
 section.alternate p {
-    max-width: 100%;
+    max-width: 50em;
 }
 
 section.invert {
