@@ -130,7 +130,14 @@ form p {
 
 /* --------------------------------------- */
 
+.container {
+    height:100%;
+    max-width: 150em;
+    margin:0 auto;
+}
+
 section {
+    background: #fff;
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
     box-sizing:border-box;
