@@ -99,6 +99,19 @@ a:hover span {
     color:#000;
 }
 
+strong {
+    display: block;
+    float: left;
+    margin:.3em .5em 0 0;
+    padding:.3em .5em;
+    line-height: 1;
+    font-size:.7em;
+    text-transform: uppercase;
+    background: #BBE5F9;
+    border-left:.5em solid #3387c4;
+    color:#3387c4;
+}
+
 input[type=email] {
     border:none;
     font-size:.6em;
@@ -239,6 +252,7 @@ section.links a {
 section.links a:hover {
     border-color:#ddd;
 }
+
 
 /* --------------------------------------- */
 
