@@ -102,6 +102,11 @@ ul li {
     margin:0 .5em .5em 0;
 }
 
+ul li a, ul li a:visited {
+    display: inline;
+    color:rgba(0,0,0,1);
+}
+
 a span {
     color:rgba(0,0,0,0.3);
     padding:0 0 0 .5em;
