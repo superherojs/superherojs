@@ -89,6 +89,19 @@ li a {
     display: block;
 }
 
+ul {
+    padding:2em 0 0 0;
+}
+
+ul li {
+    display: inline;
+    background: #fff;
+    border-left:.5em solid #3387c4;
+    font-size:1.6em;
+    padding:.5em 1em;
+    margin:0 .5em .5em 0;
+}
+
 a span {
     color:rgba(0,0,0,0.3);
     padding:0 0 0 .5em;
@@ -253,6 +266,9 @@ section.links a:hover {
     border-color:#ddd;
 }
 
+section.credits {
+    background: #BBE5F9;
+}
 
 /* --------------------------------------- */
 
