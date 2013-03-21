@@ -217,6 +217,8 @@ section.two {
     background-position: top left;
     background-image:url("../images/blue.gif");
     background-color: #BBE5F9;
+    padding-top:10em;
+    padding-bottom:10em;
     color:#000;
 }
 
