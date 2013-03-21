@@ -316,7 +316,7 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 @media all and (max-width: 50em) {
-    section, section.alternate, section.top, section.last { padding:10em; }
+    section, section.alternate, section.top, section.last { padding:6em; }
     section.close { padding-top:0; }
     i { display: none !important; }
 }
