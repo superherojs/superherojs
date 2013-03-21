@@ -94,12 +94,12 @@ ul {
 }
 
 ul li {
-    display: inline;
+    display: inline-block;
     background: #fff;
     border-left:.5em solid #3387c4;
     font-size:1.6em;
     padding:.5em 1em;
-    margin:0 .5em .5em 0;
+    margin:0 .5em 1em 0;
 }
 
 ul li a, ul li a:visited {
