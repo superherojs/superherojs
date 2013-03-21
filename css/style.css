@@ -298,6 +298,11 @@ only screen and (                min-resolution: 2dppx) {
     body { font-size:9px; }
 }
 
+@media all and (max-width: 80em) {
+    section.two { background-image:none; }
+    section.alternate { padding:10em 15em; }
+}
+
 @media all and (max-width: 75em) {
     body { font-size:8px; }
     section.init { height: auto; }
@@ -306,8 +311,6 @@ only screen and (                min-resolution: 2dppx) {
 
 @media all and (max-width: 65em) {
     body { font-size:7px; }
-    section.two { background-image:none; }
-    section.alternate { padding:10em 15em; }
 }
 
 @media all and (max-width: 55em) {
