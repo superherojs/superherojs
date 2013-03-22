@@ -130,6 +130,11 @@ strong {
     color:#3387c4;
 }
 
+input {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
 input[type=email] {
     border:none;
     font-size:.6em;
