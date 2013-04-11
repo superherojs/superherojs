@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>superhero.js</title>
+  <link href="http://superherojs.com/"/>
+  <updated>2013-04-11T17:01:00Z</updated>
+  <author>
+    <name>Kim Joar Bekkelund</name>
+  </author>
+  <author>
+    <name>Olav Bjørkøy</name>
+  </author>
+  <author>
+    <name>Mads Mobæk</name>
+  </author>
+  <id>http://superherojs.com/feed.atom</id>
+
+  <entry>
+    <title>Newsletter #1: JavaScript Security, Browser DevTools &amp; Deploying Large Apps</title>
+    <id>http://superherojs.com/newsletter/1</id>
+    <updated>2013-04-11T17:01:00Z</updated>
+    <content type="html">
+      <![CDATA[
+      <p>From our hollow volcano on Prototype Island, hello world! Now, for your consideration, here are the latest and most heroic articles on creating, testing and maintaining large JavaScript apps.</p>
+       
+      <p>After being bit by a radioactive web spider, we've unlocked the superpower of security, leading to a new section on how to write secure JS apps. We have an article on the basic principles of security by Grand Master Douglas Crockford, a cheat sheet for securing your apps from Erlend "The Lock" Oftedal, and a great book from the untangler himself, Michal Zalewski.</p>
+       
+      <p>We also have a new video on developer tools from the evil geniuses at Code School, an article on deploying JS apps from Alex Sexton, master of builds.</p>
+      
+      <ul>
+        <li><a href="http://www.codeschool.com/courses/discover-devtools">Discover DevTools, by Code School</a></li>
+        <li><a href="http://alexsexton.com/blog/2013/03/deploying-javascript-applications">Deploying JavaScript Applications, by Alex Sexton</a></li>
+        <li><a href="http://www.youtube.com/watch?v=zKuFu19LgZA">Principles of Security, by Douglas Crockford</a></li>
+        <li><a href="https://github.com/eoftedal/writings/blob/master/published/javascript-security-cheat-sheet.md">Single Page Web App Security Cheat Sheet, by Erlend Oftedal</a></li>
+        <li><a href="http://shop.oreilly.com/product/9781593273880.do">The Tangled Web, by Michal Zalewski</a></li>
+      </ul>
+       
+      <p>We broadcast our top secret JS-ray from <a href="https://twitter.com/superhero_js">Twitter</a>, and will keep you up to date on new articles in coming issues of this newsletter. If you have any suggestions, please send them to suggestions@superherojs.com, especially if your special powers include security or performant JS.</p>
+       
+      <p>Thanks!</p>
+      ]]>
+    </content>
+  </entry>
+
+</feed>
