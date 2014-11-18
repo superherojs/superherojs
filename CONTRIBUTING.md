@@ -7,11 +7,13 @@ forum to discuss content and different resources, we need some guidelines.
 
 ## Superhero.js Vision
 
-Superhero.js isn't a collection of the latest framework tutorial, but focuses
-on lasting knowledge for platform and craftsmanship. Resources should preferably
-be generic rather than specific tools, libraries and framework. Instead of
-learning abstractions like frameworks, Superhero.js favor understanding these
-abstractions through a fundemental knowledge of platform and language.
+Superhero.js is not a collection of the latest framework tutorials. Instead we
+focus on craftmanship and building a fundamental knowledge of the platform and
+language. We believe this is the best way to learn how to build awesome apps,
+and we also think it's essential to understanding and appreciating all the new
+tools, libraries and frameworks that surround us. At Superhero.js we therefore
+prefer resources that are generic rather than about specific tools, libraries
+and frameworks.
 
 ## Contributing Guidelines
 
