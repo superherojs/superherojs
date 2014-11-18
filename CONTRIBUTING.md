@@ -17,17 +17,17 @@ and frameworks.
 
 ## Contributing Guidelines
 
-* Each Pull Request should only contain one addition, change or delete.
-* There shouldn't be any duplicate issues. Make sure to see already closed issues.
-* Pull Requests with additions should describe why the resource is awesome and
-  why it would be a great addition to the site. Please share with us what
-  you learned from it and what others can learn.
-* We will strive to keep the quality of our resources up, and with that we try
+* Each Pull Request should only add, change or delete one resource.
+* Make sure to check already closed issues, so we don't get duplicate issues.
+* If you want to add a resource it's far easier to get it approved if you
+  describe why the resource is awesome and why it would be a great addition to
+  the site. Please share with us what you learned from it and what others can
+  learn.
+* We will strive to keep the quality of our resources up, and we prefer
   to not have many overlapping resources. Maybe another resource is better than
   what we all ready have?
 * Be amazing and help us create a great set of resources to help others getting
   into Javascript.
-
 
 ## Some Topics We're Interested In
 
