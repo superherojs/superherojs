@@ -12,7 +12,7 @@ focus on craftmanship and building a fundamental knowledge of the platform and
 language. We believe this is the best way to learn how to build awesome apps,
 and we also think it's essential to understanding and appreciating all the new
 tools, libraries and frameworks that surround us. At Superhero.js we therefore
-prefer resources that are generic rather than about specific tools, libraries
+prefer resources that are general rather than about specific tools, libraries
 and frameworks.
 
 ## Contributing Guidelines
