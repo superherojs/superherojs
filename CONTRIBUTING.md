@@ -31,13 +31,10 @@ abstractions through a fundemental knowledge of platform and language.
 
 We are always interested in getting pull requests with new resources, and maybe
 replace some of our existing links, but there are a few gaps in our collection
-that we are especially interested in covering. Some of these topics include:
+that we are particularly interested in covering.
 
-* JavaScript architecture. How to build and structure large-scale JavaScript apps
-* Virtual DOM and component based architecture
-* Building JavaScript apps and asset management. We don't want resources that
-  focus on Grunt, Gulp or Makefiles, but focus on those things that matter
-  whatever tool you choose.
+You can at any time see what resources we are currently actively looking for
+by using the [`request` label in the issue list](https://github.com/superherojs/superherojs/labels/request).
 
 Remember, if you are unsure if you got a good resource or you just want to discuss
 some existing resources we are more than willing to participate in a discussion.
