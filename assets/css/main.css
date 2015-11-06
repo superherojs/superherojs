@@ -21,7 +21,7 @@ html {
     text-size-adjust: none;
 
     font-size: 16px;
-    background: #37474F url(../icons/circle3.svg) center center repeat-y;
+    background: #37474F url(../img/circle3.svg) center center repeat-y;
     background-size: 290% auto;
 }
 
@@ -118,7 +118,7 @@ input[type=submit] {
 }
 
 .overlay .inner {
-    background: #263238 url(../icons/circle1.svg) 50% 54% no-repeat;
+    background: #263238 url(../img/circle1.svg) 50% 54% no-repeat;
     background-size: auto 415%;
     height: 100%;
     width: 100%;
@@ -174,7 +174,7 @@ header nav a {
 }
 
 footer {
-    background: #263238 url(../icons/circle1.svg) 50% 50% no-repeat;
+    background: #263238 url(../img/circle1.svg) 50% 50% no-repeat;
     background-size: auto 150%;
     text-align: center;
     padding: 6rem 0;
@@ -259,7 +259,7 @@ section {
     padding: 1.5rem;
     margin: 0 auto 1rem auto;
     border-top: 2px solid #fff;
-    background: #263238 url(../icons/circle2.svg) 50% -100% no-repeat;
+    background: #263238 url(../img/circle2.svg) 50% -100% no-repeat;
     background-size: 150% auto;
 }
 
