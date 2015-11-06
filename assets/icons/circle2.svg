@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="600px" height="600px" viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4 (15575) - http://www.bohemiancoding.com/sketch -->
+    <title>circle2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-1-Copy" sketch:type="MSArtboardGroup" transform="translate(-1161.000000, -1770.000000)">
+            <g id="circle2" sketch:type="MSLayerGroup" transform="translate(1161.000000, 1770.000000)">
+                <rect id="Rectangle-63" fill="#263238" sketch:type="MSShapeGroup" x="0" y="0" width="600" height="600"></rect>
+                <circle id="Oval-1" stroke-opacity="0.5" stroke="#242F35" stroke-width="20" sketch:type="MSShapeGroup" cx="300" cy="300" r="250"></circle>
+                <circle id="Oval-1-Copy" stroke-opacity="0.5" stroke="#242F35" stroke-width="20" sketch:type="MSShapeGroup" cx="300" cy="300" r="200"></circle>
+                <circle id="Oval-1-Copy-2" stroke-opacity="0.5" stroke="#242F35" stroke-width="20" sketch:type="MSShapeGroup" cx="300" cy="300" r="150"></circle>
+                <circle id="Oval-1-Copy-3" stroke-opacity="0.5" stroke="#242F35" stroke-width="20" sketch:type="MSShapeGroup" cx="300" cy="300" r="100"></circle>
+                <rect id="Rectangle-62" fill="#263238" sketch:type="MSShapeGroup" x="29" y="282" width="543" height="36"></rect>
+                <rect id="Rectangle-62-Copy-3" fill="#263238" sketch:type="MSShapeGroup" transform="translate(300.500000, 300.000000) rotate(-45.000000) translate(-300.500000, -300.000000) " x="29" y="282" width="543" height="36"></rect>
+                <rect id="Rectangle-62-Copy-2" fill="#263238" sketch:type="MSShapeGroup" transform="translate(300.500000, 300.000000) rotate(-315.000000) translate(-300.500000, -300.000000) " x="29" y="282" width="543" height="36"></rect>
+                <rect id="Rectangle-62-Copy" fill="#263238" sketch:type="MSShapeGroup" transform="translate(300.500000, 300.000000) rotate(-270.000000) translate(-300.500000, -300.000000) " x="29" y="282" width="543" height="36"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

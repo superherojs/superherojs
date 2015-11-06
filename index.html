@@ -1,267 +1,349 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <title>Superhero.js</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no, minimum-scale = 1.0, maximum-scale = 1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="no">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-
-    <link href="http://fonts.googleapis.com/css?family=Bangers|Source+Sans+Pro:400,700" rel="stylesheet" type="text/css">
-
-    <link href="icons/stylesheets/general_foundicons.css" rel="stylesheet" type="text/css">
-    <link href="css/reset.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
     <link type="application/atom+xml" rel="alternate" href="/feed.atom" title="Atom feed">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-39378175-1']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
-
-    <!--[if lt IE 9]>
-        <script src="js/html5shiv.js"></script>
-    <![endif]-->
+    <link href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/main.css?v=3">
 </head>
-<body id="superhero">
+<body>
 
-<section class="init one invert"><div class="inner">
-    <h1><span>Superhero.js</span></h1>
-    <p>
-        Creating, testing and maintaining a large JavaScript code base is not easy &mdash;
-        especially since great resources on how to do this are hard to find.
-        This page is a collection of the best articles, videos and presentations
-        we've found on the topic.
-    </p>
-    <p>
-        Follow us on <a href="http://twitter.com/superhero_js">Twitter</a>,
-        <a href="https://github.com/superherojs/superherojs">GitHub</a>,
-        <a href="/feed.atom">RSS</a>,
-        or check out our <a href="#newsletter">newsletter</a>.<br>
-        And we'd love to hear <a href="mailto:mail@superherojs.com">your suggestions</a>.
-    </p>
-</div></section>
+<div class="overlay"><div class="inner"></div></div>
 
-<section class="alternate toc two">
-    <p>
-        We come across a lot of great articles on creating, testing and maintaining large JavaScript applications.
-        This page is a continuously updated list of articles that help explain the syntax of JavaScript,
-        how to organize your projects, how to test your code, and what's on the horizon. Have fun!
-    </p>
-    <ol>
-        <li><a href="#language">Understanding JavaScript: Syntax, style and gotchas</a></li>
-        <li><a href="#organizing">Organizing your code: API design, patterns and frameworks</a></li>
-        <li><a href="#testing">Testing your application: Testable code, readable tests</a></li>
-        <li><a href="#tools">Tools of the trade: Workflow, developer tools and debugging</a></li>
-        <li><a href="#performance">Performance and Profiling: Fast and memory-efficient code</a></li>
-        <li><a href="#security">Securing your app: Principles, access control and validation</a></li>
-        <li><a href="#browser">Under the hood: Understanding the browser</a></li>
-        <li><a href="#next">On the horizon: Stuff to keep an eye on</a></li>
-        <li><a href="#resources">The league of awesome: Other superheroic resources</a></li>
-    </ol>
-    <p class="first">
-        Organized by
-        <a href="http://kimjoar.net">@kimjoar</a>,
-        <a href="https://twitter.com/madsmobaek">@madsmobaek</a>,
-        <a href="http://bjorkoy.com/">@vandelay</a>,
-        <a href="https://twitter.com/mollerse">@mollerse</a> and
-        <a href="https://twitter.com/mikaelbrevik">@mikaelbrevik</a>.
-    </p>
-</section>
+<main>
 
+    <header>
+        <h1>
+            <a href="#">Superherojs</a>
+        </h1>
+        <p>
+            Creating, testing and maintaining a large JavaScript code base is not easy.
+            This page contains the best resources we've found on the topic.
+        </p>
+        <nav>
+            <a href="http://twitter.com/superhero_js"><i class="icon ion-social-twitter"></i></a>
+            <a href="https://github.com/superherojs/superherojs"><i class="icon ion-social-github"></i></a>
+            <a href="feed.atom"><i class="icon ion-social-rss"></i></a>
+            <a href="mailto:mail@superherojs.com"><i class="icon ion-paper-airplane"></i></a>
+        </nav>
+    </header>
 
-<section class="links top" id="language">
-    <h2><span><i class="foundicon-idea"></i> Understanding JavaScript</span></h2>
-    <ol>
-        <li><a href="http://yehudakatz.com/2011/08/11/understanding-javascript-function-invocation-and-this/">
-            Understanding JavaScript Function Invocation and "this" <span>Yehuda Katz, yehudakatz.com</span></a></li>
-        <li><a href="http://www.jblotus.com/2013/01/13/common-javascript-gotchas/">
-            Common JavaScript "Gotchas" <span>James Fuller, jblotus.com</span></a></li>
-        <li><a href="http://www.codethinked.com/preparing-yourself-for-modern-javascript-development">
-            Preparing Yourself for Modern JavaScript Development <span>Justin Etheredge, codethinked.com</span></a></li>
-        <li><a href="http://msdn.microsoft.com/en-us/magazine/ff852808.aspx">
-            Prototypes and Inheritance in JavaScript <span>Scott Allen, msdn.microsoft.com</span></a></li>
-        <li><a href="https://github.com/airbnb/javascript">
-            Style Guide: A mostly reasonable approach to JavaScript <span>Airbnb, github.com/airbnb</span></a></li>
-        <li><a href="https://www.codeschool.com/paths/javascript">
-            <strong>Course</strong> Code School: The JavaScript Path <span>Code School</span></a></li>
-        <li><a href="http://eloquentjavascript.net/2nd_edition/preview/">
-            <strong>Book</strong> Eloquent JavaScript <span>Marijn Haverbeke</span></a></li>
-        <li><a href="http://effectivejs.com/">
-            <strong>Book</strong> Effective JavaScript <span>David Herman</span></a></li>
-    </ol>
-</section>
+    <figure>
+        <a href="."><img src="assets/icons/logo-main.svg" alt="Superherojs"></a>
+        <a href="#understand"><img src="assets/icons/logo-understand.svg" alt="Understand"></a>
+        <a href="#organize"><img src="assets/icons/logo-organize.svg" alt="Organize"></a>
+        <a href="#supertools"><img src="assets/icons/logo-tools.svg" alt="Supertools"></a>
+        <a href="#resources"><img src="assets/icons/logo-resources.svg" alt="Resources"></a>
+        <a href="#internals"><img src="assets/icons/logo-internals.svg" alt="Internals"></a>
+        <a href="#secure"><img src="assets/icons/logo-secure.svg" alt="Secure"></a>
+        <a href="#testing"><img src="assets/icons/logo-testing.svg" alt="Testing"></a>
+        <a href="#future"><img src="assets/icons/logo-future.svg" alt="The Future"></a>
+        <a href="#perform"><img src="assets/icons/logo-perform.svg" alt="Perform"></a>
+    </figure>
 
+    <section id="understand" class="c1">
+        <img src="assets/icons/logo-understand-dark.svg" alt="Understand">
+        <h2>Understanding JavaScript: syntax, style and gotchas</h2>
+        <ol>
+            <li><a href="http://www.jblotus.com/2013/01/13/common-javascript-gotchas/">
+                <i class="icon ion-link"></i>
+                Common JavaScript "Gotchas" <span>James Fuller, jblotus.com</span>
+			</a></li>
+            <li><a href="http://msdn.microsoft.com/en-us/magazine/ff852808.aspx">
+                <i class="icon ion-link"></i>
+                Prototypes and Inheritance in JavaScript <span>Scott Allen, msdn.microsoft.com</span>
+			</a></li>
+            <li><a href="http://www.codethinked.com/preparing-yourself-for-modern-javascript-development">
+                <i class="icon ion-link"></i>
+                Preparing Yourself for Modern JavaScript Development <span>Justin Etheredge, codethinked.com</span>
+			</a></li>
+            <li><a href="http://yehudakatz.com/2011/08/11/understanding-javascript-function-invocation-and-this/">
+                <i class="icon ion-link"></i>
+                Understanding JavaScript Function Invocation and "this" <span>Yehuda Katz, yehudakatz.com</span>
+			</a></li>
+            <li><a href="https://github.com/airbnb/javascript">
+                <i class="icon ion-link"></i>
+                Style Guide: A mostly reasonable approach to JavaScript <span>Airbnb, github.com/airbnb</span>
+			</a></li>
+            <li><a href="https://www.codeschool.com/paths/javascript">
+                <i class="icon ion-university"></i>
+                Code School: The JavaScript Path <span>Code School</span>
+			</a></li>
+            <li><a href="http://eloquentjavascript.net/2nd_edition/preview/">
+                <i class="icon ion-bookmark"></i>
+                Eloquent JavaScript <span>Marijn Haverbeke</span>
+			</a></li>
+            <li><a href="http://effectivejs.com/">
+                <i class="icon ion-bookmark"></i>
+                Effective JavaScript <span>David Herman</span>
+			</a></li>
+        </ol>
+    </section>
 
-<section id="organizing" class="links close">
-    <h2><i class="foundicon-folder"></i> <span>Organizing your code</span></h2>
-    <ol>
-        <li><a href="http://www.smashingmagazine.com/2012/10/09/designing-javascript-apis-usability//">
-            Designing Better JavaScript APIs <span>Rodney Rehm, coding.smashingmagazine.com</span></a></li>
-        <li><a href="http://sporto.github.com/blog/2012/12/09/callbacks-listeners-promises/">
-            Asynchronous JS: Callbacks, Listeners, Control Flow Libs and Promises <span>Sebastian Porto, sporto.github.com</span></a></li>
-        <li><a href="http://www.youtube.com/watch?v=juRtEEsHI9E">
-            I .promise() to show you .when() to use Deferreds <span>Alex McPherson, youtube.com</span></a></li>
-        <li><a href="http://www.html5rocks.com/en/tutorials/es6/promises/">
-            JavaScript Promises <span>Jake Archibald, html5rocks.com</span></a></li>
-        <li><a href="http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth">
-            JavaScript Module Pattern: In-Depth <span>Ben Cherry, adequatelygood.com</span></a></li>
-        <li><a href="http://esa-matti.suuronen.org/blog/2013/03/22/journey-from-requirejs-to-browserify/">
-            Journey From RequireJS to Browserify <span> Esa-Matti Suuronen, suuronen.org</span></a></li>
-        <li><a href="http://coding.smashingmagazine.com/2012/12/05/client-side-templating/">
-            Client-Side Templating <span>Lars Kappert, smashingmagazine.com</span></a></li>
-        <li><a href="https://leanpub.com/javascript-allonge/read">
-            <strong>Book</strong> JavaScript Allongé <span>Reginald Braithwaite</span></a></li>
-        <li><a href="http://shop.oreilly.com/product/9780596806767.do">
-            <strong>Book</strong> JavaScript Patterns <span>Stoyan Stefanov</span></a></li>
-        <li><a href="http://shop.oreilly.com/product/0636920018421.do">
-            <strong>Book</strong> JavaScript Web Applications <span>Alex MacCaw</span></a></li>
-    </ol>
-</section>
+    <section id="organize" class="c2">
+        <img src="assets/icons/logo-organize-dark.svg" alt="Organize">
+        <h2>Organizing your code: API design, patterns and frameworks.</h2>
+        <ol>
+            <li><a href="http://www.smashingmagazine.com/2012/10/09/designing-javascript-apis-usability//">
+                <i class="icon ion-link"></i>
+                Designing Better JavaScript APIs <span>Rodney Rehm, coding.smashingmagazine.com</span>
+			</a></li>
+            <li><a href="http://www.youtube.com/watch?v=juRtEEsHI9E">
+                <i class="icon ion-link"></i>
+                I .promise() to show you .when() to use Deferreds <span>Alex McPherson, youtube.com</span>
+			</a></li>
+            <li><a href="http://www.html5rocks.com/en/tutorials/es6/promises/">
+                <i class="icon ion-link"></i>
+                JavaScript Promises <span>Jake Archibald, html5rocks.com</span>
+			</a></li>
+            <li><a href="http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth">
+                <i class="icon ion-link"></i>
+                JavaScript Module Pattern: In-Depth <span>Ben Cherry, adequatelygood.com</span>
+			</a></li>
+            <li><a href="http://esa-matti.suuronen.org/blog/2013/03/22/journey-from-requirejs-to-browserify/">
+                <i class="icon ion-link"></i>
+                Journey From RequireJS to Browserify <span> Esa-Matti Suuronen, suuronen.org</span>
+			</a></li>
+            <li><a href="http://sporto.github.com/blog/2012/12/09/callbacks-listeners-promises/">
+                <i class="icon ion-link"></i>
+                Asynchronous JS: Callbacks, Listeners, Control Flow Libs and Promises <span>Sebastian Porto, sporto.github.com</span>
+			</a></li>
+            <li><a href="http://coding.smashingmagazine.com/2012/12/05/client-side-templating/">
+                <i class="icon ion-link"></i>
+                Client-Side Templating <span>Lars Kappert, smashingmagazine.com</span>
+			</a></li>
+            <li><a href="https://leanpub.com/javascript-allonge/read">
+                <i class="icon ion-bookmark"></i>
+                JavaScript Allongé <span>Reginald Braithwaite</span>
+			</a></li>
+            <li><a href="http://shop.oreilly.com/product/9780596806767.do">
+                <i class="icon ion-bookmark"></i>
+                JavaScript Patterns <span>Stoyan Stefanov</span>
+			</a></li>
+            <li><a href="http://shop.oreilly.com/product/0636920018421.do">
+                <i class="icon ion-bookmark"></i>
+                JavaScript Web Applications <span>Alex MacCaw</span>
+			</a></li>
+        </ol>
+    </section>
 
+    <section id="testing" class="c3">
+        <img src="assets/icons/logo-testing-dark.svg" alt="Testing">
+        <h2>Testing your application: testable code, readable tests.</h2>
+        <ol>
+            <li><a href="http://www.adequatelygood.com/2010/7/Writing-Testable-JavaScript">
+                <i class="icon ion-link"></i>
+                Writing Testable JavaScript <span>Ben Cherry, adequatelygood.com</span>
+			</a></li>
+            <li><a href="http://uxebu.com/blog/2013/01/08/make-tests-read-like-a-book/">
+                <i class="icon ion-link"></i>
+                Make tests read like a book <span>Wolfram Kriesing, uxebu.com</span>
+			</a></li>
+            <li><a href="https://shanetomlinson.com/2013/testing-javascript-frontend-part-1-anti-patterns-and-fixes/">
+                <i class="icon ion-link"></i>
+                Writing Testable Frontend Javascript Part 1 – Anti-patterns and their fixes <span>Shane Tomlinson, shanetomlinson.com</span>
+			</a></li>
+            <li><a href="http://opensoul.org/blog/archives/2012/05/16/the-plight-of-pinocchio/">
+                <i class="icon ion-link"></i>
+                The Plight of Pinocchio: JavaScript's quest to become a real language <span>Brandon Keepers, opensoul.org</span>
+			</a></li>
+            <li><a href="http://www.letscodejavascript.com/">
+                <i class="icon ion-university"></i>
+                Let's Code: Test-Driven JavaScript <span>James Shore, letscodejavascript.com</span>
+			</a></li>
+            <li><a href="http://jstesting.jcoglan.com/">
+                <i class="icon ion-bookmark"></i>
+                JavaScript Testing Recipes <span>James Coglan</span>
+			</a></li>
+        </ol>
+    </section>
 
-<section id="testing" class="links close">
-    <h2><i class="foundicon-checkmark"></i> <span>Testing your application</span></h2>
-    <ol>
-        <li><a href="https://shanetomlinson.com/2013/testing-javascript-frontend-part-1-anti-patterns-and-fixes/">
-            Writing Testable Frontend Javascript Part 1 – Anti-patterns and their fixes <span>Shane Tomlinson, shanetomlinson.com</span></a></li>
-        <li><a href="http://www.adequatelygood.com/2010/7/Writing-Testable-JavaScript">
-            Writing Testable JavaScript <span>Ben Cherry, adequatelygood.com</span></a></li>
-        <li><a href="http://uxebu.com/blog/2013/01/08/make-tests-read-like-a-book/">
-            Make tests read like a book <span>Wolfram Kriesing, uxebu.com</span></a></li>
-        <li><a href="http://opensoul.org/blog/archives/2012/05/16/the-plight-of-pinocchio/">
-            The Plight of Pinocchio: JavaScript's quest to become a real language <span>Brandon Keepers, opensoul.org</span></a></li>
-        <li><a href="http://www.letscodejavascript.com/">
-            <strong>Course</strong>Let's Code: Test-Driven JavaScript <span>James Shore, letscodejavascript.com</span></a></li>
-        <li><a href="http://jstesting.jcoglan.com/">
-            <strong>Book</strong> JavaScript Testing Recipes <span>James Coglan</span></a></li>
-    </ol>
-</section>
+    <section id="supertools" class="c4">
+        <img src="assets/icons/logo-tools-dark.svg" alt="Supertools">
+        <h2>Tools of the trade: workflow, developer tools and debugging.</h2>
+        <ol>
+            <li><a href="https://www.youtube.com/watch?v=1OAfGm_cI6Y">
+                <i class="icon ion-link"></i>
+                Automating Your Front-end Workflow <span>Addy Osmani, youtube.com</span>
+			</a></li>
+            <li><a href="http://www.codeschool.com/courses/discover-devtools">
+                <i class="icon ion-link"></i>
+                Discover DevTools <span>Code School, codeschool.com</span>
+			</a></li>
+            <li><a href="https://developers.google.com/chrome-developer-tools/">
+                <i class="icon ion-link"></i>
+                Chrome Developer Tools <span>Google, developers.google.com</span>
+			</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLNYkxOF6rcIBQ8j3J_PyM8JLAGKqZRByw">
+                <i class="icon ion-link"></i>
+                "The Breakpoint" episodes <span>Paul Irish and Addy Osmani, youtube.com</span>
+			</a></li>
+            <li><a href="http://www.elijahmanor.com/2012/09/control-complexity-of-your-javascript.html">
+                <i class="icon ion-link"></i>
+                Control the Complexity of Your JavaScript Functions with JSHint <span>Elijah Manor, elijahmanor.com</span>
+			</a></li>
+        </ol>
+    </section>
 
+    <section id="perform" class="c2">
+        <img src="assets/icons/logo-perform-dark.svg" alt="Perform">
+        <h2>Performance and profiling: fast and memory-efficient code.</h2>
+        <ol>
+            <li><a href="http://coding.smashingmagazine.com/2012/11/05/writing-fast-memory-efficient-javascript/">
+                <i class="icon ion-link"></i>
+                Writing Fast, Memory-Efficient JavaScript <span>Addy Osmani, smashingmagazine.com</span>
+			</a></li>
+            <li><a href="http://addyosmani.com/blog/performance-optimisation-with-timeline-profiles/">
+                <i class="icon ion-link"></i>
+                Improving Web App Performance With the Chrome DevTools <span>Addy Osmani, addyosmani.com</span>
+			</a></li>
+            <li><a href="http://www.youtube.com/watch?v=hAzhayTnhEI">
+                <i class="icon ion-link"></i>
+                Jank Busters: Building Performant Web Apps <span>Nat Duca &amp; Tom Wiltzius, youtube.com</span>
+			</a></li>
+            <li><a href="http://www.html5rocks.com/en/tutorials/speed/animations/">
+                <i class="icon ion-link"></i>
+                Leaner, Meaner, Faster Animations with requestAnimationFrame <span>Paul Lewis, html5rocks.com</span>
+			</a></li>
+            <li><a href="http://gent.ilcore.com/2011/03/how-not-to-trigger-layout-in-webkit.html">
+                <i class="icon ion-link"></i>
+                How (not) to trigger a layout in WebKit <span>Tony Gentilcore, gent.ilcore.com</span>
+			</a></li>
+            <li><a href="http://chimera.labs.oreilly.com/books/1230000000545/index.html">
+                <i class="icon ion-bookmark"></i>
+                High Performance Browser Networking <span>Ilya Grigorik</span>
+			</a></li>
+            <li><a href="http://shop.oreilly.com/product/9780596802806.do">
+                <i class="icon ion-bookmark"></i>
+                High Performance JavaScript <span>Nicholas C. Zakas</span>
+			</a></li>
+        </ol>
+    </section>
 
-<section id="tools" class="links close">
-    <h2><i class="foundicon-tools"></i> <span>Tools of the trade</span></h2>
-    <ol>
-        <li><a href="https://www.youtube.com/watch?v=1OAfGm_cI6Y">
-            Automating Your Front-end Workflow <span>Addy Osmani, youtube.com</span></a></li>
-        <li><a href="http://www.codeschool.com/courses/discover-devtools">
-            Discover DevTools <span>Code School, codeschool.com</span></a></li>
-        <li><a href="https://developers.google.com/chrome-developer-tools/">
-            Chrome Developer Tools <span>Google, developers.google.com</span></a></li>
-        <li><a href="https://www.youtube.com/playlist?list=PLNYkxOF6rcIBQ8j3J_PyM8JLAGKqZRByw">
-            "The Breakpoint" episodes <span>Paul Irish and Addy Osmani, youtube.com</span></a></li>
-        <li><a href="http://www.elijahmanor.com/2012/09/control-complexity-of-your-javascript.html">
-            Control the Complexity of Your JavaScript Functions with JSHint <span>Elijah Manor, elijahmanor.com</span></a></li>
-    </ol>
-</section>
+    <section id="secure" class="c4">
+        <img src="assets/icons/logo-secure-dark.svg" alt="Secure">
+        <h2>Securing your app: principles, access control and validation.</h2>
+        <ol>
+            <li><a href="https://github.com/eoftedal/writings/blob/master/published/javascript-security-cheat-sheet.md">
+                <i class="icon ion-link"></i>
+                Single Page Web App Security Cheat Sheet <span>Erlend Oftedal, github.com/eoftedal</span>
+			</a></li>
+            <li><a href="https://mikewest.org/2013/09/frontend-security-frontendconf-2013">
+                <i class="icon ion-link"></i>
+                Frontend Security <span>Mike West, mikewest.org</span>
+			</a></li>
+            <li><a href="http://shop.oreilly.com/product/9781593273880.do">
+                <i class="icon ion-bookmark"></i>
+                The Tangled Web <span>Michal Zalewski</span>
+			</a></li>
+        </ol>
+    </section>
 
+    <section id="internals" class="c2">
+        <img src="assets/icons/logo-internals-dark.svg" alt="Internals">
+        <h2>Under the hood: Understanding the browser.</h2>
+        <ol>
+            <li><a href="http://2014.jsconf.eu/speakers/philip-roberts-what-the-heck-is-the-event-loop-anyway.html">
+                <i class="icon ion-link"></i>
+                What the heck is the event loop anyway? <span>Philip Roberts, 2014.jsconf.eu</span>
+			</a></li>
+            <li><a href="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/">
+                <i class="icon ion-link"></i>
+                How browsers work <span>Tali Garsiel & Paul Irish, html5rocks.com</span>
+			</a></li>
+            <li><a href="http://paulirish.com/2013/webkit-for-developers/">
+                <i class="icon ion-link"></i>
+                WebKit for Developers <span>Paul Irish, paulirish.com</span>
+			</a></li>
+            <li><a href="http://www.youtube.com/watch?v=y8hVeKMD_oM">
+                <i class="icon ion-link"></i>
+                mö.js - explaining js vm in js <span>Vyacheslav Egorov, youtube.com</span>
+			</a></li>
+        </ol>
+    </section>
 
-<section id="performance" class="links close">
-    <h2><i class="foundicon-graph"></i> <span>Performance and Profiling</span></h2>
-    <ol>
-        <li><a href="http://coding.smashingmagazine.com/2012/11/05/writing-fast-memory-efficient-javascript/">
-            Writing Fast, Memory-Efficient JavaScript <span>Addy Osmani, smashingmagazine.com</span></a></li>
-        <li><a href="http://addyosmani.com/blog/performance-optimisation-with-timeline-profiles/">
-            Improving Web App Performance With the Chrome DevTools <span>Addy Osmani, addyosmani.com</span></a></li>
-        <li><a href="http://www.youtube.com/watch?v=hAzhayTnhEI">
-            Jank Busters: Building Performant Web Apps <span>Nat Duca & Tom Wiltzius, youtube.com</span></a></li>
-        <li><a href="http://www.html5rocks.com/en/tutorials/speed/animations/">
-            Leaner, Meaner, Faster Animations with requestAnimationFrame <span>Paul Lewis, html5rocks.com</span></a></li>
-        <li><a href="http://gent.ilcore.com/2011/03/how-not-to-trigger-layout-in-webkit.html">
-            How (not) to trigger a layout in WebKit <span>Tony Gentilcore, gent.ilcore.com</span></a></li>
-        <li><a href="http://chimera.labs.oreilly.com/books/1230000000545/index.html">
-            <strong>Book</strong> High Performance Browser Networking <span>Ilya Grigorik</span></a></li>
-        <li><a href="http://shop.oreilly.com/product/9780596802806.do">
-            <strong>Book</strong> High Performance JavaScript <span>Nicholas C. Zakas</span></a></li>
-    </ol>
-</section>
+    <section id="future" class="c1">
+        <img src="assets/icons/logo-future-dark.svg" alt="The Future">
+        <h2>On the horizon: Stuff to keep an eye on.</h2>
+        <ol>
+            <li><a href="http://www.youtube.com/watch?v=X_ek1wSe66o">
+                <i class="icon ion-link"></i>
+                The Web Can Do That!? <span>Eric Bidelman, youtube.com</span>
+			</a></li>
+            <li><a href="https://github.com/lukehoban/es6features">
+                <i class="icon ion-link"></i>
+                Overview of ECMAScript 6 features <span>Luke Hoban, github.com/lukehoban</span>
+			</a></li>
+            <li><a href="http://alexsexton.com/blog/2013/03/deploying-javascript-applications/">
+                <i class="icon ion-link"></i>
+                Deploying JavaScript Applications <span>Alex Sexton, alexsexton.com</span>
+			</a></li>
+            <li><a href="https://www.youtube.com/watch?v=mS264h8KGwk">
+                <i class="icon ion-link"></i>
+                Immutability, interactivity &amp; JavaScript <span>David Nolen, youtube.com</span>
+			</a></li>
+            <li><a href="http://jbi.sh/what-is-virtual-dom/">
+                <i class="icon ion-link"></i>
+                What is virtual DOM? <span>Jack Bishop, jbi.sh</span>
+			</a></li>
+            <li><a href="http://html5doctor.com/methods-of-communication/">
+                <i class="icon ion-link"></i>
+                Methods of communication <span>Remy Sharp, html5doctor.com</span>
+			</a></li>
+            <li><a href="https://gist.github.com/staltz/868e7e9bc2a7b8c1f754">
+                <i class="icon ion-link"></i>
+                The introduction to Reactive Programming you've been missing <span>André Staltz, github.com/staltz</span>
+			</a></li>
+            <li><a href="http://tjholowaychuk.tumblr.com/post/27984551477/components">
+                <i class="icon ion-link"></i>
+                Components <span>TJ Holowaychuk, tjholowaychuk.com</span>
+			</a></li>
+            <li><a href="http://merrickchristensen.com/articles/javascript-dependency-injection.html">
+                <i class="icon ion-link"></i>
+                JavaScript Dependency Injection <span>Merrick Christensen, merrickchristensen.com</span>
+			</a></li>
+        </ol>
+    </section>
 
+    <section id="resources" class="c3">
+        <img src="assets/icons/logo-resources-dark.svg" alt="Resources">
+        <h2>The league of awesome: other superheroic resources.</h2>
+        <ol class="last">
+            <li><a href="http://javascriptweekly.com/">
+                <i class="icon ion-link"></i>
+                JavaScript Weekly <span>Peter Cooper, javascriptweekly.com</span>
+			</a></li>
+            <li><a href="http://webplatformdaily.org/">
+                <i class="icon ion-link"></i>
+                Open Web Platform Daily Digest <span>Sime Vidas, webplatformdaily.org</span>
+			</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript">
+                <i class="icon ion-link"></i>
+                Mozilla Developer Network <span>Mozilla, mozilla.org</span>
+			</a></li>
+            <li><a href="http://javascriptjabber.com/">
+                <i class="icon ion-link"></i>
+                JavaScript Jabber <span>javascriptjabber.com</span>
+			</a></li>
+        </ol>
+    </section>
 
-<section id="security" class="links close">
-    <h2><i class="foundicon-lock"></i> <span>Securing your app</span></h2>
-    <ol>
-        <li><a href="https://github.com/eoftedal/writings/blob/master/published/javascript-security-cheat-sheet.md">
-            Single Page Web App Security Cheat Sheet <span>Erlend Oftedal, github.com/eoftedal</span></a></li>
-        <li><a href="https://mikewest.org/2013/09/frontend-security-frontendconf-2013">
-            Frontend Security <span>Mike West, mikewest.org</span></a></li>
-        <li><a href="http://shop.oreilly.com/product/9781593273880.do">
-            <strong>Book</strong> The Tangled Web <span>Michal Zalewski</span></a></li>
-    </ol>
-</section>
+</main>
 
-
-<section id="browser" class="links close">
-    <h2><i class="foundicon-settings"></i> <span>Under the hood</span></h2>
-    <ol>
-        <li><a href="http://2014.jsconf.eu/speakers/philip-roberts-what-the-heck-is-the-event-loop-anyway.html">
-            What the heck is the event loop anyway? <span>Philip Roberts, 2014.jsconf.eu</span></a></li>
-        <li><a href="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/">
-            How browsers work <span>Tali Garsiel & Paul Irish, html5rocks.com</span></a></li>
-        <li><a href="http://paulirish.com/2013/webkit-for-developers/">
-            WebKit for Developers <span>Paul Irish, paulirish.com</span></a></li>
-        <li><a href="http://www.youtube.com/watch?v=y8hVeKMD_oM">
-            mö.js - explaining js vm in js <span>Vyacheslav Egorov, youtube.com</span></a></li>
-    </ol>
-</section>
-
-
-<section id="next" class="links close last">
-    <h2><i class="foundicon-star"></i> <span>On the horizon</span></h2>
-    <ol>
-        <li><a href="http://www.youtube.com/watch?v=X_ek1wSe66o">
-            The Web Can Do That!? <span>Eric Bidelman, youtube.com</span></a></li>
-        <li><a href="https://github.com/lukehoban/es6features">
-            Overview of ECMAScript 6 features <span>Luke Hoban, github.com/lukehoban</span></a></li>
-        <li><a href="http://alexsexton.com/blog/2013/03/deploying-javascript-applications/">
-            Deploying JavaScript Applications <span>Alex Sexton, alexsexton.com</span></a></li>
-        <li><a href="https://www.youtube.com/watch?v=mS264h8KGwk">
-            Immutability, interactivity & JavaScript <span>David Nolen, youtube.com</span></a></li>
-        <li><a href="http://jbi.sh/what-is-virtual-dom/">
-            What is virtual DOM? <span>Jack Bishop, jbi.sh</span></a></li>
-        <li><a href="http://html5doctor.com/methods-of-communication/">
-            Methods of communication <span>Remy Sharp, html5doctor.com</span></a></li>
-        <li><a href="https://gist.github.com/staltz/868e7e9bc2a7b8c1f754">
-            The introduction to Reactive Programming you've been missing <span>André Staltz, github.com/staltz</span></a></li>
-        <li><a href="http://tjholowaychuk.tumblr.com/post/27984551477/components">
-            Components <span>TJ Holowaychuk, tjholowaychuk.com</span></a></li>
-        <li><a href="http://merrickchristensen.com/articles/javascript-dependency-injection.html">
-            JavaScript Dependency Injection <span>Merrick Christensen, merrickchristensen.com</span></a></li>
-    </ol>
-</section>
-
-
-<section id="resources" class="more"><div class="content">
-    <h2><i class="foundicon-globe"></i> <span>Other superheroes</span></h2>
-    <ol class="last">
-        <li><a href="http://javascriptweekly.com/">
-            JavaScript Weekly <span>Peter Cooper, javascriptweekly.com</span></a></li>
-        <li><a href="http://webplatformdaily.org/">
-            Open Web Platform Daily Digest <span>Sime Vidas, webplatformdaily.org</span></a></li>
-        <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript">
-            Mozilla Developer Network <span>Mozilla, mozilla.org</span></a></li>
-        <li><a href="http://javascriptjabber.com/">
-            JavaScript Jabber <span>javascriptjabber.com</span></a></li>
-    </ol>
-
-    <h2 id="newsletter"><i class="foundicon-mail"></i> <span>Newsletter</span></h2>
-    <p>Subscribe for updates. No spam, we promise();</p>
+<footer>
     <form action="http://superherojs.us5.list-manage2.com/subscribe/post?u=862185f1aae866d58d91bc544&amp;id=87fac3d768" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <p><input type="email" placeholder="E-mail address" value="" name="EMAIL" class="required email" id="mce-EMAIL"></p>
-        <p><input type="submit" value="Sign up now" name="subscribe" id="mc-embedded-subscribe"></p>
+        <input type="email" placeholder="E-mail address" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+        <input type="submit" value="Subscribe for updates" name="subscribe" id="mc-embedded-subscribe">
     </form>
-</div></section>
 
-
-<section id="thanks" class="credits"><div class="content">
-    <h2><i class="foundicon-smiley"></i> <span>Superthanks!</span></h2>
+    <h3>Contributors</h3>
     <ul>
         <li><a href="https://twitter.com/tinekl">Tine Kleivane</a></li>
         <li><a href="https://github.com/thomaseggum">Thomas Johan Eggum</a></li>
@@ -273,8 +355,17 @@
         <li><a href="https://github.com/chenzihui">Chen Zihui</a></li>
         <li><a href="http://hinderberg.no">Hans Magnus Inderberg</a></li>
     </ul>
-</div></section>
 
+    <h3>Credits</h3>
+    <ul>
+        <li><a href="http://kimjoar.net">@kimjoar</a></li>
+        <li><a href="https://twitter.com/madsmobaek">@madsmobaek</a></li>
+        <li><a href="http://olav.io">@vandelay</a></li>
+        <li><a href="https://twitter.com/mollerse">@mollerse</a></li>
+        <li><a href="https://twitter.com/mikaelbrevik">@mikaelbrevik</a></li>
+    </ul>
+
+</footer>
 
 </body>
 </html>
