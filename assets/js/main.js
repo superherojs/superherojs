@@ -1,17 +1,16 @@
 (function () {
-  var largeHeader = document.querySelector('.largeHeader');
+  var aside = document.querySelector('aside');
   var main = document.querySelector('main');
-  var body = document.body;
-  var thresholdPadding = 100;
+  var thresholdPadding = 200;
 
   document.addEventListener('scroll', function () {
-    var scrollTop = body.scrollTop;
+    var scrollTop = window.pageYOffset;
     var isFurtherDownThanThreshold = scrollTop + thresholdPadding >=
-      largeHeader.offsetHeight + largeHeader.offsetTop;
-    var hasMinify = main.className.indexOf('minifyHeader') !== -1;
+      aside.offsetHeight + aside.offsetTop;
+    var hasMinify = main.className.indexOf('minify') !== -1;
 
     if (isFurtherDownThanThreshold && !hasMinify) {
-      main.className = 'minifyHeader';
+      main.className = 'minify';
     } else if (!isFurtherDownThanThreshold && hasMinify) {
       main.className = '';
     }
