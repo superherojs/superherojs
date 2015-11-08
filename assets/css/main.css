@@ -177,7 +177,7 @@ footer {
     background: #263238 url(../img/circle1.svg) 50% 50% no-repeat;
     background-size: auto 150%;
     text-align: center;
-    padding: 6rem 0;
+    padding: 6rem 0 10rem 0;
 }
 
 @media (min-width: 650px) {
@@ -231,6 +231,37 @@ figure a {
     width: 50%;
 }
 
+aside {
+    display: block;
+    position: fixed;
+    bottom: -7rem;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: #455A64;
+    -webkit-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.1);
+}
+
+aside .inner {
+    display: table;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+aside a {
+    display: table-cell;
+    width: auto;
+    float: none;
+}
+
+aside img {
+    display: block;
+    width: 100%;
+    box-shadow: none;
+}
+
 @media (min-width: 650px) {
     figure a { width: 33.33%; }
     figure a:first-child { display: none; }
@@ -239,6 +270,7 @@ figure a {
 @media (min-width: 900px) {
     figure a { width: 20%; }
     figure a:first-child { display: block; }
+    .minify aside { bottom: -1px; }
 }
 
 figure img {
@@ -249,8 +281,11 @@ figure img {
 
 @media (min-width: 900px) {
     figure a:nth-child(n+2):hover img {
-        transform: translatey(-1rem);
         box-shadow: 0 0 1rem rgba(17,23,26,0.5);
+    }
+
+    figure a:nth-child(n+2):hover img {
+        transform: translatey(-1rem);
     }
 }
 
