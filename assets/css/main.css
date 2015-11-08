@@ -258,6 +258,8 @@ aside img {
     display: block;
     width: 100%;
     box-shadow: none;
+    max-height: 5.15em;
+    max-width: 5.15rem;
 }
 
 @media (min-width: 650px) {
