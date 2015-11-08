@@ -239,7 +239,7 @@ aside {
     background: #455A64;
     -webkit-transition: all 300ms ease-out;
     transition: all 300ms ease-out;
-    box-shadow: 0 0 1rem rgba(0,0,0,0.1);
+    box-shadow: 0 0 .5rem rgba(0,0,0,0.05);
 }
 
 aside .inner {
@@ -258,8 +258,8 @@ aside img {
     display: block;
     width: 100%;
     box-shadow: none;
-    max-height: 5.15em;
-    max-width: 5.15rem;
+    max-height: 4.5rem;
+    max-width: 4.5rem;
 }
 
 @media (min-width: 650px) {
