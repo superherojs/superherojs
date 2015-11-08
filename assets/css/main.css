@@ -56,6 +56,7 @@ ul, ol {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    margin: 0;
     font-size: 1rem;
     font-weight: normal;
     line-height: 1.4;
@@ -141,7 +142,7 @@ main {
 
 header {
     position: relative;
-    margin-bottom: 2rem;
+    margin: 0 0 2rem 0;
 }
 
 @media (min-width: 650px) {
@@ -211,13 +212,9 @@ footer li {
     color: rgba(255,255,255,0.75);
 }
 
-
-/* Content
----------------------------------------- */
-
 figure {
     position: relative;
-    margin-bottom: 4rem;
+    margin: 0 0 4rem 0;
 }
 
 figure:after {
@@ -237,6 +234,7 @@ aside {
     bottom: -7rem;
     left: 0;
     right: 0;
+    margin: 0;
     z-index: 999;
     background: #455A64;
     -webkit-transition: all 300ms ease-out;
@@ -288,6 +286,10 @@ figure img {
         transform: translatey(-1rem);
     }
 }
+
+
+/* Content
+---------------------------------------- */
 
 section {
     position: relative;
