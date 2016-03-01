@@ -53,6 +53,11 @@ p.first {
     margin:0;
 }
 
+span.updated-on {
+  font-style: italic;
+  font-size: 0.7em;
+}
+
 ol {
     list-style-type:decimal;
     margin:0;
